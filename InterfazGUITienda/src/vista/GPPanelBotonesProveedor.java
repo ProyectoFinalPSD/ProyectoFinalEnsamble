@@ -8,9 +8,9 @@ import javax.swing.JPanel;
 public class GPPanelBotonesProveedor extends JPanel
 {
 	private JButton crear, actualizar, borrar;
-	private static final String CREAR = "CREAR";
-	private static final String ACTUALIZAR = "ACTUALIZAR";
-	private static final String BORRAR = "BORRAR";
+	public static final String CREAR = "CREAR";
+	public static final String ACTUALIZAR = "ACTUALIZAR";
+	public static final String BORRAR = "BORRAR";
 
 	public GPPanelBotonesProveedor()
 	{
@@ -29,4 +29,29 @@ public class GPPanelBotonesProveedor extends JPanel
 		add(actualizar);
 		add(borrar);		
 	}
+
+	public JButton getCrear() {
+		return crear;
+	}
+
+	public void setCrear(JButton crear) {
+		this.crear = crear;
+	}
+
+	public JButton getActualizar() {
+		return actualizar;
+	}
+
+	public void setActualizar(JButton actualizar) {
+		this.actualizar = actualizar;
+	}
+
+	public JButton getBorrar() {
+		return borrar;
+	}
+
+	public void setBorrar(JButton borrar) {
+		this.borrar = borrar;
+	}
+	
 }

@@ -35,4 +35,29 @@ public class GUI extends JFrame
 		add(pg);
 		add(po, BorderLayout.SOUTH);
 	}
+
+	public GUIPanelBotonGenerarVenta getPg() {
+		return pg;
+	}
+
+	public void setPg(GUIPanelBotonGenerarVenta pg) {
+		this.pg = pg;
+	}
+
+	public GUIPanelBotonesOpciones getPo() {
+		return po;
+	}
+
+	public void setPo(GUIPanelBotonesOpciones po) {
+		this.po = po;
+	}
+
+	public JLabel getTituloG() {
+		return tituloG;
+	}
+
+	public void setTituloG(JLabel tituloG) {
+		this.tituloG = tituloG;
+	}
+	
 }

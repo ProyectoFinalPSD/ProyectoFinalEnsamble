@@ -22,5 +22,18 @@ public class JFrameGestionProveedores extends JFrame
 		
 		panelLista =  new GPPanelListaProveedor();
 		add(panelLista, BorderLayout.CENTER);	
+	}
+	public GPPanelBotonesProveedor getPanelBotones() {
+		return panelBotones;
+	}
+	public void setPanelBotones(GPPanelBotonesProveedor panelBotones) {
+		this.panelBotones = panelBotones;
+	}
+	public GPPanelListaProveedor getPanelLista() {
+		return panelLista;
+	}
+	public void setPanelLista(GPPanelListaProveedor panelLista) {
+		this.panelLista = panelLista;
 	}	
+	
 }
