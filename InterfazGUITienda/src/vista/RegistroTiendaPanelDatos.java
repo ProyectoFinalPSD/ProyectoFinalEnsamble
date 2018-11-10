@@ -10,13 +10,13 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 
-public class panelEM1 extends JPanel
+public class RegistroTiendaPanelDatos extends JPanel
 {
 	private static final long serialVersionUID = 1L;
 	private JLabel labN, labTipoC, labNIT, labCOrigen, labIVa, labTasaInteres, labNBanco, labNumCuenta, labNGerente ;
 	private JTextField txtNT, TxtTipoC, txtNIT, TxtCOrigen, TxtIVa, TxtTasaInteres, TxtNBanco, TxtNumCuenta, TxtNGerente;
 	
-	public panelEM1()
+	public RegistroTiendaPanelDatos()
 	{
 		setLayout(new GridLayout(10, 2));
 		TitledBorder border = BorderFactory.createTitledBorder("Datos entrada");

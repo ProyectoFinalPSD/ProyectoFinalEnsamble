@@ -8,7 +8,7 @@ import modelo.ModProveedor;
 import modelo.Mundo;
 import vista.GPPanelRegistroProveedores;
 import vista.GUI;
-import vista.GUIM1;
+import vista.JFrameRegistroTiendaParametros;
 import vista.JFrameGestionProveedores;
 //import vista.Ventana;
 
@@ -16,24 +16,24 @@ public class Controlador implements ActionListener {
 
 	private GUI v;
 	private Mundo m;
-	
+
 	private JFrameGestionProveedores j;
 	private GPPanelRegistroProveedores jp;
-	private GUIM1 gui1;
+	private JFrameRegistroTiendaParametros gui1;
 
 	public Controlador()
 	{
 		v = new GUI();
-		
+
 		j = new JFrameGestionProveedores(); 
 		jp = new GPPanelRegistroProveedores();
-		gui1 = new GUIM1();
-		
+		gui1 = new JFrameRegistroTiendaParametros();
+
 		v.setVisible(true);
 		j.setVisible(false);
 		jp.setVisible(false);
-		
-		
+
+
 		gui1.getPom1().getBtnAgregar().addActionListener(this);
 		v.getPo().getBtnDatos().addActionListener(this);
 		j.getPanelBotones().getCrear().addActionListener(this);
@@ -58,7 +58,7 @@ public class Controlador implements ActionListener {
 			j.setVisible(true);
 			v.setVisible(false);
 		}
-		
+
 		else if(e.getActionCommand().equals(j.getPanelBotones().CREAR))
 		{
 			jp.setVisible(true);
@@ -70,12 +70,44 @@ public class Controlador implements ActionListener {
 			String nombre = jp.getNom().getText();
 			String direccion = jp.getAdress().getText();
 			String ciudad = jp.getCiudad_().getText();
-			
+
 			m.getModprov().agregarProveedor(NIT, nombre, direccion, tel, ciudad);
-			
+
 		}
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
-	
-	
+
+
 

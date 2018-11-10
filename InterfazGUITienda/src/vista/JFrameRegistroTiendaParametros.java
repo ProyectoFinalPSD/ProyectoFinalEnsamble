@@ -5,17 +5,14 @@ import java.awt.GridLayout;
 
 import javax.swing.JFrame;
 
-public class GUIM1 extends JFrame
+public class JFrameRegistroTiendaParametros extends JFrame
 {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
-	private panelEM1 pe;
-	private panelOpM1 pom1;
+	private RegistroTiendaPanelDatos pe;
+	private RegistroTiendaPanelBotonesDatos pom1;
 	
-	public GUIM1()
+	public JFrameRegistroTiendaParametros()
 	{			
 		setLayout(new BorderLayout());
 		setSize(700,500);
@@ -26,8 +23,8 @@ public class GUIM1 extends JFrame
 		
 		
 		
-		pe = new panelEM1();
-		pom1 = new panelOpM1();
+		pe = new RegistroTiendaPanelDatos();
+		pom1 = new RegistroTiendaPanelBotonesDatos();
 		
 		add(pe);
 		add(pom1, BorderLayout.SOUTH);
@@ -36,22 +33,22 @@ public class GUIM1 extends JFrame
 	}
 
 
-	public panelEM1 getPe() {
+	public RegistroTiendaPanelDatos getPe() {
 		return pe;
 	}
 
 
-	public void setPe(panelEM1 pe) {
+	public void setPe(RegistroTiendaPanelDatos pe) {
 		this.pe = pe;
 	}
 
 
-	public panelOpM1 getPom1() {
+	public RegistroTiendaPanelBotonesDatos getPom1() {
 		return pom1;
 	}
 
 
-	public void setPom1(panelOpM1 pom1) {
+	public void setPom1(RegistroTiendaPanelBotonesDatos pom1) {
 		this.pom1 = pom1;
 	}
 	

@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.TitledBorder;
 
-public class panelOpM1 extends JPanel
+public class RegistroTiendaPanelBotonesDatos extends JPanel
 {
 
 	/**
@@ -23,7 +23,7 @@ public class panelOpM1 extends JPanel
 	public final static String CARGAR = "Cargar";
 	
 	
-	public panelOpM1()
+	public RegistroTiendaPanelBotonesDatos()
 	{
 		setLayout(new GridLayout(1, 2));
 		TitledBorder border = BorderFactory.createTitledBorder("");
@@ -42,23 +42,28 @@ public class panelOpM1 extends JPanel
 		
 	}
 
-	public JButton getBtnAgregar() {
+	public JButton getBtnAgregar() 
+	{
 		return btnAgregar;
 	}
 
-	public void setBtnAgregar(JButton btnAgregar) {
+	public void setBtnAgregar(JButton btnAgregar) 
+	{
 		this.btnAgregar = btnAgregar;
 	}
 
-	public JButton getBtnCargar() {
+	public JButton getBtnCargar()
+	{
 		return btnCargar;
 	}
 
-	public void setBtnCargar(JButton btnCargar) {
+	public void setBtnCargar(JButton btnCargar) 
+	{
 		this.btnCargar = btnCargar;
 	}
 
-		public static long getSerialversionuid() {
+		public static long getSerialversionuid() 
+		{
 		return serialVersionUID;
 	}
 
